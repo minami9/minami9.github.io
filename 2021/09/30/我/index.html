@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="手札" />
+  <meta name="author" content="9th Patient" />
+  <meta name="description" content="ダメ人間物語" />
+  
+  
+  <title>
+    
+      我 
+      
+      
+      |
+    
+     9th Patient
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/orange.png">
+    <link rel="icon" href="/images/orange.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/css/color-scheme.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+<link rel="stylesheet" href="/css/github-markdown.css">
+<link rel="stylesheet" href="/css/highlight.css">
+<link rel="stylesheet" href="/css/comments.css">
+
+  <!-- 代码块风格 -->
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+  <!-- 樱花 
+  <script type="text/javascript" src="/js/sakura.js"></script>
+  -->
+<meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="9th Patient" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+  <body>
+    <div id="app">
+      <a target="_blank" rel="noopener" href="https://github.com/minami9" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#666; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/14040726.jpeg" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">9th Patient</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">Root</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">Archives</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">Tags</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">Friends</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">About</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">我</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime" title="Update time"></i>
+          2021-09-30 09:41:15
+        </span>
+        
+              <span class="post-tags">
+                <i class="iconfont icon-tags" title="Tags"></i>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E6%95%85%E4%BA%8B/" title="故事">
+                    <b>#</b>故事&emsp;
+                  </a>
+                </span>
+                
+                <span class="span--tag">
+                  <a href="/tags/%E7%85%A7%E7%89%87/" title="照片">
+                    <b>#</b>照片&emsp;
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <p>我猜大多数人都想过这么一个问题，那就是 “我是谁？”。有很多人脑海里面第一个浮现，也可能脱口而出的便是“我是张三”。<br>当然此处的张三，是化名。即，就中国人而言大多人的第一反应是我是某某或者某某某，更或者某某某某。</p>
+<h3 id="你可曾想过为什么会有这样奇妙的现象发生？"><a href="#你可曾想过为什么会有这样奇妙的现象发生？" class="headerlink" title="你可曾想过为什么会有这样奇妙的现象发生？"></a>你可曾想过为什么会有这样奇妙的现象发生？</h3><p>我猜想：名字在人来到这个世界的时候，就开始与自己紧密结合，这就像是一个ID，一串序列号，一个允许我们通行世界的许可证。<br>如此以来，我们可以通过这样的一个ID，来呼唤张三，张三听到呼唤后，匹配到是自己的名字，就能作出反应。以至于名字就代表了人，人被名字所代表。<br>没有人尝试过，过一个无名的人生。</p>
+<h3 id="现代文明为什么会存在这样的情况呢？"><a href="#现代文明为什么会存在这样的情况呢？" class="headerlink" title="现代文明为什么会存在这样的情况呢？"></a>现代文明为什么会存在这样的情况呢？</h3><p>我再次猜想：现代文明社会需要人有名字。假如一个人没有名字，首先就会遇到一个问题。在中国无法上户口，无法上户口意味着没有身份证号。也就是说，没有了那一串ID。<br>我想告诉张三这个人一个非常好玩的事情。假如张三这个人并没有张三这个名字，当我告诉siri给**打电话，结果siri告诉我找不到这个人。仿佛从物理意义上这个人已经消失了，从我的世界消失了。<br>所以当有一天，你分手了，想要忘记对方，最好的方式，我已经告诉你了。忘记他&#x2F;她的名字即可。我想，在我们的人生中，肯定也会存在这样的一些人，他们随着时间的推进，你渐渐已经忘却了他们的名字。<br>甚至能想起和他一起做的事情，记得他的模样，就是想不起来这个人的名字了。他&#x2F;她在这个时候，已经从你的世界里面消失了。<br>这一切的一切，都来自于这个名字是否你明晰地记忆，通过这个记忆带出这个人的脸，这个人的身高，这个人有什么样的性格与作为。<br>这个时候，我们应该知道了，应了现代文明的要求，我们有了名。但是换个角度，我们不要去思考别人，我们思考自己。<br>在这个我这个名字下面，我是谁？我长了什么样的脸？我身高是多少？我有什么样的性格？我有什么作为？<br>我相信，上述的问题，都还能简单回答。但是我问你，假如你现在20岁，10年前的1月1日，你是长了什么样的脸？身高多少？有什么样的性格？有什么作为？恐怕难以回答，因为自己都记不住了。<br>所以当有人问你你是谁的时候，回答我是某某某，其实并不正确。你是你，是不完整的你，或者说现在的，此时此刻的你。你这个人并不代表所有时间段上的你。<br>今天你是个当代好青年，明天是个杀人恶魔，后天是个伟人，这一切并不矛盾。你可以说你是这三天中的任意一个人，因为那都是你。<br>并且，往往我们在评价一个人的时候，也是总站在一个时刻评价，要想综合这个人的评价可以说并不可能。因为没有一个人去度过了另一个人的所有记忆，甚至连自己度过自己的所有记忆都做不到。<br>这或许是人类进化没能获得的极其重要的能力。《哲学导论》王德峰版里面有描述，人这种动物，在自然界中比起老鹰有敏锐的视觉，锋利的爪子，以及擅长吃肉的嘴，这都是人所有没有的在自然界进化出的特质。<br>所以后面继续说了一点，即，人是一种进化并不完全的动物。对于我们自身的缺点，我们是否有办法能够解决问题，即回答：我是谁？</p>
+<h3 id="如何回答我是谁？"><a href="#如何回答我是谁？" class="headerlink" title="如何回答我是谁？"></a>如何回答我是谁？</h3><p>通过上面的描述，其实我是谁这个问题，至少可以肯定，并不是一句我是某某某可以描述的。我是某某某是一种缺陷到极致的回答，因为其无法描述这个名字下承受的记忆的重量。<br>所以为了回答我是谁这个问题，我们需要一个本子，它可以记录下我所有的记忆和思考。这个本子长得像《哈利波特》中邓布利多的冥想盆。我们可以用魔杖将记忆从脑子里面抽出，像淡蓝色的发光的丝线，放入这个冥想盆中。<br>当然，在现实世界中，并不存在。作为计算机相关从业者我能想到的是，有这样一个软件，它加密保存，且通过敲击键盘，以文字的形式记录自己的一切记忆和思考。（记录欺骗自己的记忆并没有意义，因为这个世界里并没有发生过这样的事情）<br>当我们存储了记忆十年，当有人问，你是谁？的时候，我想告诉提问者，我有十年的记忆，如果你乐意看，它们可以告诉你我是谁，如果你不乐意，我叫九号病人天田南。</p>
+<h3 id="关于冥想盆"><a href="#关于冥想盆" class="headerlink" title="关于冥想盆"></a>关于冥想盆</h3><p>其实gito-nikki已经拥有部分这种功能，但是其只能按照每天记录。所以我想为gito-nikki增加一个冥想盆的功能。专注回答我是谁这个问题，帮我了解我自己，也帮助你们了解自己，或者帮助你的别人了解你（不建议）。:)<br>关于之后提供冥想盆功能的基本要求（跟我无关，加密了我又看不到）：<br>1.只记录现实世界存在的。<br>2.记录所有的思考和记忆，就算其是龌龊，不齿，且邪恶的想法，但那不也是你么。<br>3.保护好自己的密码，保护好自己记忆。冥想盆只提供这个工具。人都会犯错，出了问题被别人看到你的记忆不是工具的错。</p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2021/08/17/%E9%97%AF%E8%BF%9B%E5%88%AB%E4%BA%BA%E4%B8%96%E7%95%8C%E7%9A%84%E7%9E%AC%E9%97%B4%EF%BC%88%E4%B8%89%EF%BC%89/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>Prev</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime" title="Update time"></i>
+              2021-09-30 09:41:15
+            </span>
+            
+                  <span class="post-tags">
+                    <i class="iconfont icon-tags" title="Tags"></i>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E6%95%85%E4%BA%8B/" title="故事">
+                        <b>#</b>故事 
+                      </a>
+                    </span>
+                    
+                    <span class="span--tag">
+                      <a href="/tags/%E7%85%A7%E7%89%87/" title="照片">
+                        <b>#</b>照片 
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2022/06/15/%E7%96%AB%E6%83%85%E3%80%81%E6%88%90%E9%83%BD%E3%80%81%E6%88%91%E4%BB%AC/" target="_self">
+                <span>Next</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">Contents</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%A0%E5%8F%AF%E6%9B%BE%E6%83%B3%E8%BF%87%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E6%9C%89%E8%BF%99%E6%A0%B7%E5%A5%87%E5%A6%99%E7%9A%84%E7%8E%B0%E8%B1%A1%E5%8F%91%E7%94%9F%EF%BC%9F"><span class="toc-text">你可曾想过为什么会有这样奇妙的现象发生？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%B0%E4%BB%A3%E6%96%87%E6%98%8E%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%AD%98%E5%9C%A8%E8%BF%99%E6%A0%B7%E7%9A%84%E6%83%85%E5%86%B5%E5%91%A2%EF%BC%9F"><span class="toc-text">现代文明为什么会存在这样的情况呢？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%9B%9E%E7%AD%94%E6%88%91%E6%98%AF%E8%B0%81%EF%BC%9F"><span class="toc-text">如何回答我是谁？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%86%A5%E6%83%B3%E7%9B%86"><span class="toc-text">关于冥想盆</span></a></li></ol>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://www-j2kly-com.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="email" href="mailto:amada.minami@protonmail.com">
+            <i class="iconfont icon-envelope"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        <a href="https://9th.link">Copyright © 9th Patient 2021-2022</a>
+        
+    </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+    <div class="tools-bar-item theme-icon" id="switch-show-sakura">
+      <a href="javascript: void(0)">
+        <i id="backgroud-icon" class="iconfont icon-flower"></i>
+      </a>
+    </div>
+
+    
+<script src="/js/sakura.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + %E6%88%91 + '&url=' + https%3A%2F%2F9th.link%2F2021%2F09%2F30%2F%25E6%2588%2591%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=https://9th.link/2021/09/30/%E6%88%91/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
